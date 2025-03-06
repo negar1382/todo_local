@@ -73,3 +73,52 @@ button{
     color: rgb(150, 150, 150);
     text-decoration: line-through;
 }
+
+
+@media (max-width: 1200px) {
+    .input, .todo__list {
+        width: 900px;
+    }
+
+    .todo__item {
+        padding: 10px 50px 10px 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .input, .todo__list {
+        width: 600px;
+    }
+
+    .todo__item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .todo__item .button__todo {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .input, .todo__list {
+        width: 90%;
+    }
+
+    .input input {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .add, .delete__all, .delete, .complate {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .todo__item {
+        padding: 10px;
+    }
+}
